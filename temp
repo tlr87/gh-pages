@@ -13,3 +13,10 @@
 <div class="box b6">
   <h1>6</h1>
 </div>
+
+
+
+var objTo = document.getElementById('container');
+var divtest = document.createElement("div");
+divtest.innerHTML = "new div";
+objTo.appendChild(divtest);
