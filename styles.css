@@ -11,4 +11,6 @@ body{
   height: 100%;
   border-style: solid;
   float: left;
+  background: white;
+  transition: 5s;
 }
