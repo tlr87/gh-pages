@@ -2,22 +2,31 @@ body{
   margin: 0 auto;
   background-color: #000;
 }
+h2{
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+
+}
 .container{
   margin: 0 auto;
   width: 50%;
   height: 50%;
+}
+.art{
 }
 .box{
   width: 23%;
   height: 160px;
   border-style: solid;
   float: left;
-  background: white;
-  transition: 2s;
+  background: black;
+  transition: 8s;
   text-indent: -9999px;
   /*border-radius: 25px;*/
 }
 .box:hover{
-  background: white!important;
+  background: lightgrey!important;
   transition: 1s!important;
 }
