@@ -8,12 +8,16 @@ body{
   height: 50%;
 }
 .box{
-  width: 25%;
-  height: 100%;
+  width: 23%;
+  height: 160px;
   border-style: solid;
   float: left;
   background: white;
   transition: 2s;
   text-indent: -9999px;
   /*border-radius: 25px;*/
+}
+.box:hover{
+  background: white!important;
+  transition: 1s!important;
 }

@@ -1,19 +1,22 @@
 var className ="";
 var classBG ="";
 //var loopBool = false;
+var piano = document.getElementById("keys");
 
-
-function addDiv() {
-  var div = document.createElement("div");
-  div.innerHTML = "Hello";
-  document.getElementsByClassName("art")[0].appendChild(div).classList.add("box");
-  document.getElementsByClassName("art")[0].appendChild(div).classList.add("b4");
-  loopBool = true;
-  delayTimer(2);
-console.log( BGcol(classBG)); 
-
-//  loopBool = false;
+function playAudio(Sindex) {
+    var Sarray = ["piano-043.mp3","piano-048.mp3","piano-053.mp3" ,"piano-088.mp3" ];
+    console.log("Play it a again sam!");
+    document.getElementById("keys").setAttribute("src",Sarray[Sindex]);
+    piano.play();
+    delayTimer(4);
 }
+
+
+
+
+
+
+
 
 BGcol();
 
@@ -40,16 +43,6 @@ setTimeout(function(){ console.log("the death of us all!"); }, timer);
 for (var i = 1; i < elements.length+1; i++) {
 classBG = "b"+[i];
 BGcol(classBG);
-delayTimer(1+1);
+delayTimer(2);
+
 }
-
-
-
-loopBool=false;
-
-//for (var i = 1; i == i; i++) {
-//classBG = "b"+[i];
-//BGcol(classBG);
-//delayTimer(2);
-//console.log("Hello");
-//}
